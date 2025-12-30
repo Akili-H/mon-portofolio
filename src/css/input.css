@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+.menu-open {
+  @media (width < 707px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    @apply bg-gray-50 rounded-sm pt-15;
+  }
+}
+.menu-open #menuItems {
+  @media (width < 707px) {
+    @apply flex flex-col p-6 border-b-2 rounded-sm border-l-2 border-gray-400/10;
+  }
+}
